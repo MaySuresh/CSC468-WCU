@@ -1,13 +1,13 @@
 import geni.portal as portal
 import geni.rspec.pg as pg
 import geni.rspec.igext as IG
-   
+
 pc = portal.Context()
 request = pc.makeRequestRSpec()
 
 tourDescription = \
 """
-This profile provides the template for 3 compute nodes with Docker and Kubernetes installed on Ubuntu 18.04
+This profile provides the template for a compute node with Docker installed on Ubuntu 18.04
 """
 
 #
@@ -24,8 +24,6 @@ num_nodes = 3
 for i in range(num_nodes):
   if i == 0:
     node = request.XenVM("head")
-    bs_landing = node.Blockstore("bs_image", "/image")
-    bs_landing.size = "500GB"
   else:
     node = request.XenVM("worker-" + str(i))
   node.cores = 4
