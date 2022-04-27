@@ -34,8 +34,8 @@ pipeline {
                     sh "sed -i 's/DOCKER_APP/${docker_app}/g' worker.yaml"
                     sh "sed -i 's/BUILD_NUMBER/${BUILD_NUMBER}/g' deployment.yaml"
                     sh 'scp -r -v -o StrictHostKeyChecking=no *.yml jk940290@130.127.132.208:~/'
-                    sh 'ssh -o StrictHostKeyChecking=no jk940290@130.127.132.208 kubectl apply -f /users/lngo/worker.yaml -n jenkins'
-                    sh 'ssh -o StrictHostKeyChecking=no jk940290@130.127.132.208 kubectl apply -f /users/lngo/worker-service.yaml -n jenkins'                                        
+                    sh 'ssh -o StrictHostKeyChecking=no jk940290@130.127.132.208 kubectl apply -f /users/jk940290/worker.yaml -n jenkins'
+                    sh 'ssh -o StrictHostKeyChecking=no jk940290@130.127.132.208 kubectl apply -f /users/jk940290/worker-service.yaml -n jenkins'                                        
                 }
             }
         }
