@@ -7,7 +7,7 @@ subred = None
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('webui/templates/index.html')
 
 
 
@@ -65,7 +65,7 @@ def getvalue():
         ts =("Net Upvotes: {} ".format( submission.score))  
         tu =("URL : {}".format(submission.url))
 
-    return render_template('pass.html', n=subred, ne = news,t= title, s = score, u = url, w = wNews, wt = wTitle, ws = wScore,wu = wUrl
+    return render_template('webui/templates/pass.html', n=subred, ne = news,t= title, s = score, u = url, w = wNews, wt = wTitle, ws = wScore,wu = wUrl
     , pn = pn, pt = pt, ps = ps, pu = pu, tn = tn, tt = tt, ts = ts, tu = tu)
     
 '''               
