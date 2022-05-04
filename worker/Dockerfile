@@ -1,5 +1,7 @@
 FROM python:alpine
 RUN pip install redis
 RUN pip install requests
-COPY bot.py /
-CMD ["python", "bot.py"]
+RUN pip install praw
+RUN pip install flask
+COPY app.py /
+CMD ["python", "app.py"]
