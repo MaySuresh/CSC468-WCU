@@ -1,0 +1,13 @@
+body{
+    background-color: #f4f4f4; /* web page color*/
+    color:#555555;
+    font: normal 16px Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+box-1{
+    border :10px  #FF4500;
+    border-width: 5px;
+
+
+}
