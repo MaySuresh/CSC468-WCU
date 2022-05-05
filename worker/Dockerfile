@@ -4,4 +4,4 @@ RUN pip install requests
 RUN pip install praw
 RUN pip install flask
 COPY app.py /
-CMD ["python", "app.py"]
+CMD ["python", "worker.py"]
