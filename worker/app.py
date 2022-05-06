@@ -74,7 +74,8 @@ def getvalue():
 
     return render_template('pass.html', n=subred, ne = news,t= title, s = score, u = url, w = wNews, wt = wTitle, ws = wScore,wu = wUrl
     , pn = pn, pt = pt, ps = ps, pu = pu, tn = tn, tt = tt, ts = ts, tu = tu)
-
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=80, threaded=True)
     
 '''               
    
