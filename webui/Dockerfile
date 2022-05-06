@@ -1,7 +1,7 @@
 FROM node:4-slim
 
 RUN npm install redis@2
-apt install python3-flask
+export FLASK_APP=web.py
 
 COPY templates/ /templates/
 COPY web.py /
