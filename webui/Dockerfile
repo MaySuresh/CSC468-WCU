@@ -1,14 +1,14 @@
 FROM node:4-slim
 RUN npm install redis@2
 
-FROM ubuntu/python:2.7
+FROM ubuntu:latest
 WORKDIR /app
 ADD . /app
 RUN set -xe \
     && apt-get update \
-    && apt-get install python-pip
+    && apt-get install python3-pip
 RUN pip install --upgrade pip
-RUN pip install -r ./requirements.txt
+RUN pip install -r requirements.txt
 
 COPY templates/ /templates/
 COPY web.py /
