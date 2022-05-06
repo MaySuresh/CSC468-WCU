@@ -1,19 +1,17 @@
 version: "2"
 
 services:
-
   webui:
     build: webui
     ports:
     - "8000:80"
     volumes:
     - "./webui/templates/:/templates/"
-
   redis:
     image: redis
 
   worker:
-  build: worker
-  ports:
+    build: worker
+    ports:
     - "3000:80"
     
