@@ -1,7 +1,7 @@
 FROM node:4-slim
 RUN npm install redis@2
 
-FROM ubuntu/python:3.1
+FROM ubuntu/python:2.7
 WORKDIR /app
 ADD . /app
 RUN set -xe \
