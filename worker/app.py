@@ -7,7 +7,7 @@ template_dir = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 template_dir = os.path.join(template_dir,'templates')
 working = 'templates'
 
-print(working == template_dir)
+working == template_dir
 app=Flask(__name__,template_folder = template_dir)
 subred = None
 
@@ -74,6 +74,7 @@ def getvalue():
 
     return render_template('pass.html', n=subred, ne = news,t= title, s = score, u = url, w = wNews, wt = wTitle, ws = wScore,wu = wUrl
     , pn = pn, pt = pt, ps = ps, pu = pu, tn = tn, tt = tt, ts = ts, tu = tu)
+
     
 '''               
    
