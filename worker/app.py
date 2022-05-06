@@ -2,8 +2,15 @@ from flask import Flask, render_template, request
 from datetime import time
 import praw
 
-app=Flask(__name__)
+import os
+template_dir = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
+template_dir = os.path.join(template_dir,'templates')
+working = 'templates'
+
+print(working == template_dir)
+app=Flask(__name__,template_folder = template_dir)
 subred = None
+
 
 @app.route('/')
 def index():
