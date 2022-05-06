@@ -4,7 +4,7 @@ services:
   webui:
     build: webui
     ports:
-    - "8000:80"
+    - "80:80"
     volumes:
     - "./webui/templates/:/templates/"
   redis:
@@ -13,5 +13,5 @@ services:
   worker:
     build: worker
     ports:
-    - "3000:80"
+    - "3000:3000"
     
