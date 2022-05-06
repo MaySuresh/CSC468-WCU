@@ -1,8 +1,8 @@
 FROM node:4-slim
 
 RUN npm install redis@2
-python -m pip install
-RUN pip install flask
+
+RUN pip install -r flask
 
 COPY templates/ /templates/
 COPY web.py /
