@@ -1,6 +1,6 @@
 FROM node:4-slim
 
 COPY templates/ /templates/
-COPY pass.html /
-CMD ["node","/pass.html"]
+COPY app.py /
+CMD ["node","/app.py"]
 EXPOSE 80
