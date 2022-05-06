@@ -10,6 +10,6 @@ RUN pip3 install flask
 RUN pip3 install flask-redis
 
 COPY templates/ /templates/
-COPY web.py /
+COPY app.py /
 CMD ["node","/web.py"]
 EXPOSE 80
