@@ -5,7 +5,7 @@ import praw
 import os
 template_dir = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 template_dir = os.path.join(template_dir,'templates')
-working = 'https://github.com/MaySuresh/Group-8/tree/main/webui/templates'
+working = 'Group-8//webui//templates'
 
 working == template_dir
 app=Flask(__name__,template_folder = template_dir)
