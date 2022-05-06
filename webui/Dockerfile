@@ -1,7 +1,7 @@
 FROM node:4-slim
 RUN npm install redis@2
 
-FROM alpine/python
+FROM ubuntu/python
 WORKDIR /app
 ADD . /app
 RUN set -xe \
