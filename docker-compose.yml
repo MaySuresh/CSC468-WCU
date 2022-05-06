@@ -1,12 +1,12 @@
 version: "2"
 
-services:
-  webui:
-    build: webui
-    ports:
-    - "80:80"
-    volumes:
-    - "./webui/templates/:/templates/"
+#services:
+  #webui:
+    #build: webui
+    #ports:
+    #- "80:80"
+    #volumes:
+    #- "./webui/templates/:/templates/"
   redis:
     image: redis
 
