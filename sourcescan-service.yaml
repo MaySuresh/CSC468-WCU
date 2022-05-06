@@ -24,31 +24,3 @@ spec:
       targetPort: 6379  
   selector:    
       app: redis
- 
----
-
-apiVersion: v1 
-kind: Service 
-metadata:  
-  name: rng 
-spec:  
-  ports:    
-    - port: 80      
-      protocol: TCP      
-      targetPort: 80  
-  selector:    
-      app: rng
-      
----
-
-apiVersion: v1 
-kind: Service 
-metadata:  
-  name: hasher 
-spec:  
-  ports:    
-    - port: 80      
-      protocol: TCP      
-      targetPort: 80  
-  selector:    
-      app: hasher
