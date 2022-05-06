@@ -1,5 +1,4 @@
 FROM node:4-slim
-FROM python:alpine
 RUN npm install redis@2
 
 FROM alpine/python
