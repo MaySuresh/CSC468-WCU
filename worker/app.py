@@ -7,7 +7,7 @@ subred = None
 
 @app.route('/')
 def index():
-    return render_template('webui/templates/index.html')
+    return render_template('Group-8/webui/templates/index.html')
 
 
 
