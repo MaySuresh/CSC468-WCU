@@ -1,1 +1,1 @@
-# CSC468-WCU CloudLab Projet
+# CSC468-WCU CloudLab Project
